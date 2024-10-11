@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LayoutCart">
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+      <ImageView
+          android:id="@+id/imageView"
+          android:layout_width="120dp"
+          android:layout_height="90dp"
+          android:padding="4dp" />
+
+      <TextView
+          android:id="@+id/textViewName"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="5dp"
+          android:layout_toRightOf="@id/imageView"
+          android:text="Pizza siu ngon"
+          android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+          android:textColor="#000000"
+          android:textSize="27sp"/>
+
+      <ImageView
+          android:id="@+id/minusCartBtn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/textViewName"
+          android:layout_marginLeft="5dp"
+          android:layout_marginTop="30dp"
+          android:layout_toRightOf="@id/imageView"
+          android:src="@drawable/ic_baseline_minus" />
+
+      <TextView
+          android:id="@+id/numberItem"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/textViewName"
+          android:layout_marginLeft="5dp"
+          android:layout_marginTop="30dp"
+          android:layout_toRightOf="@id/minusCartBtn"
+          android:text="1"
+          android:textStyle="bold"
+          android:textSize="18sp"
+          android:textColor="@color/black"/>
+
+      <ImageView
+          android:id="@+id/plusCartBtn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/textViewName"
+          android:layout_marginLeft="5dp"
+          android:layout_marginTop="30dp"
+          android:layout_toRightOf="@id/numberItem"
+          android:src="@drawable/ic_baseline_plus" />
+
+      <TextView
+          android:id="@+id/price"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="27sp"
+          android:textColor="@color/black"
+          android:text="0$"
+          android:layout_below="@id/textViewName"
+          android:layout_marginTop="20dp"
+          android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+  </androidx.cardview.widget.CardView>
+  </LinearLayout>
